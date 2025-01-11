@@ -33,3 +33,26 @@ puts "Your third variable is: #{third}"
 # Your first variable is: apple
 # Your second variable is: orange
 # Your third variable is: grapefruit
+
+
+
+# Study Drills
+# Try giving fewer than three arguments to your script.
+# Write a script that has fewer arguments and one that has more. Make sure you give the unpacked variables good names.
+# Change your script to use $stdin.gets.chomp everywhere that you have gets.chomp. You should use $stdin.gets.chomp from now on since the action gets.chomp has problems with ARGV.
+# Now that you are using $stdin.gets.chomp (see #3) you can add ARGV to your script to get something from the user. Don't over think this. Just use ARGV to get one thing, then $stdin.gets.chomp to get something else.
+
+# Common Student Questions
+# What's the difference between ARGV and gets.chomp?
+# The difference has to do with where the user is required to give input. If they give your script inputs on the command line, then you use ARGV. If you want them to input using the keyboard while the script is running, then use gets.chomp.
+
+# Are the command line arguments strings?
+# Yes, they come in as strings, even if you typed numbers on the command line. Use .to_i to convert them just like with gets.chomp.to_i.
+
+# How do you use the command line?
+# You should have learned to use it very quickly and fluently by now, but if you need to learn it at this stage, then read the Command Line Crash Course I wrote for this book in Appendix A.
+
+# I can't combine ARGV with gets.chomp.
+# Don't overthink it. Just slap two lines at the end of this script that uses gets.chomp to get something and then print it. From that, start playing with more ways to use both in the same script.
+# Why can't I do this gets.chomp = x?
+# Because that's backward to how it should work. Do it the way I do it and it'll work.
